@@ -1,12 +1,12 @@
 //set hamburger btn variables
 var menu = document.querySelector('menu')
 var burgerBtn = document.querySelector('hamburger-btn')
-var burgerMenu = document.getElementById('main-menu')
+var burgerMenu = document.querySelector('hamburger-menu')
 
 //initiate function
-burgerBtn.addEventListener("click", ()=> {
-    menu.classList.toggle("open");
-});
+burgerBtn.onclick = function() {
+    this.classList.toggle("open");
+}
 
 //set aria-expanded="true"
 
