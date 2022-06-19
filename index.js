@@ -4,6 +4,9 @@ var burgerBtn = document.querySelector('hamburger-btn')
 var burgerMenu = document.getElementById('main-menu')
 
 //initiate function
+burgerBtn.addEventListener("click", ()=> {
+    menu.classList.toggle("open");
+});
 
 //set aria-expanded="true"
 
