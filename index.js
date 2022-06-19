@@ -1,4 +1,9 @@
-//open menu when clicking the hamburger menu
+//set hamburger btn variables
+var menu = document.querySelector('menu')
+var burgerBtn = document.querySelector('hamburger-btn')
+var burgerMenu = document.getElementById('main-menu')
+
+//initiate function
 
 //set aria-expanded="true"
 
