@@ -3,10 +3,13 @@ var menu = document.querySelector('menu')
 var burgerBtn = document.querySelector('hamburger-btn')
 var burgerMenu = document.querySelector('hamburger-menu')
 
-//initiate function
-burgerBtn.onclick = function() {
+//Open menu when clicking the hamburger btn
+burgerBtn.click = function() {
+
     this.classList.toggle("open");
-}
+};
+    
+
 
 //set aria-expanded="true"
 
