@@ -11,11 +11,12 @@ var menuItem = document.querySelector('.hamburger-menu');
 
 function openMenu(){
     if(menuItem.classList.add('show-menu')) {
-        this.getAttribute('aria-expanded', 'true');
+        burgerBtn.ariaExpanded = true
     } else {
-        function closeMenu() {
+        function xMenu() {
             menuItem.classList.remove('show-menu')
-            this.getAttribute('aria-expanded', 'false');
+            //this.getAttribute('aria-expanded', 'false');
+            burgerBtn.ariaExpanded = false
             
         }
     }
@@ -23,7 +24,7 @@ function openMenu(){
     //this.getAttribute('aria-expanded', 'true');
     
     
-    burgerBtn.addEventListener("click", closeMenu)
+    burgerBtn.addEventListener("click", xMenu)
     
 }
 
