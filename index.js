@@ -10,38 +10,25 @@ var menuItem = document.querySelector('.hamburger-menu');
 };*/
 
 function openMenu(){
-    menuItem.classList.add('show-menu')
-    menuItem.ariaExpanded = 'true'
-
-    function closeMenu() {
-        menuItem.classList.remove('show-menu')
-        menuItem.ariaExpanded = 'false'
+    if(menuItem.classList.add('show-menu')) {
+        this.getAttribute('aria-expanded', 'true');
+    } else {
+        function closeMenu() {
+            menuItem.classList.remove('show-menu')
+            this.getAttribute('aria-expanded', 'false');
+            
+        }
     }
+    //document.burgerBtn.setAttribute('aria-expanded', 'true');
+    //this.getAttribute('aria-expanded', 'true');
+    
+    
     burgerBtn.addEventListener("click", closeMenu)
-    //menuItem.ariaExpanded = 'false'
+    
 }
 
 burgerBtn.addEventListener("click", openMenu);
 
-
-/*function closeMenu () {
-    if (menuBtn.classList.contains('show-menu')) {
-        openMenu()
-        burgerBtn.ariaExpanded = 'true'
-        //menuBtn.classList.remove('show-menu')
-    } else {
-        menuBtn.classList.remove('show-menu')
-        burgerBtn.ariaExpanded = 'false'
-    }
-}*/
     
 
-
-//set aria-expanded="true"
-
-//close menu when click btn
-
-//set aria-expanded="false"
-
-//close menu when click outside menu
 
