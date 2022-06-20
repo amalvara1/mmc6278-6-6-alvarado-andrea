@@ -11,9 +11,18 @@ var menuItem = document.querySelector('.hamburger-menu');
 
 function openMenu(){
     menuItem.classList.add('show-menu')
+    menuItem.ariaExpanded = 'true'
+
+    function closeMenu() {
+        menuItem.classList.remove('show-menu')
+        menuItem.ariaExpanded = 'false'
+    }
+    burgerBtn.addEventListener("click", closeMenu)
+    //menuItem.ariaExpanded = 'false'
 }
 
 burgerBtn.addEventListener("click", openMenu);
+
 
 /*function closeMenu () {
     if (menuBtn.classList.contains('show-menu')) {
