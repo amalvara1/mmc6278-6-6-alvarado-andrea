@@ -1,13 +1,30 @@
 //set hamburger btn variables
-var menu = document.querySelector('menu')
-var burgerBtn = document.querySelector('hamburger-btn')
-var burgerMenu = document.querySelector('hamburger-menu')
+var menu = document.querySelector('.menu');
+var burgerBtn = document.querySelector('.hamburger-btn');
+var menuItem = document.querySelector('.hamburger-menu');
 
 //Open menu when clicking the hamburger btn
-burgerBtn.click = function() {
+/*burgerBtn.onClick = function() {
 
     this.classList.toggle("open");
-};
+};*/
+
+function openMenu(){
+    menuItem.classList.add('show-menu')
+}
+
+burgerBtn.addEventListener("click", openMenu);
+
+/*function closeMenu () {
+    if (menuBtn.classList.contains('show-menu')) {
+        openMenu()
+        burgerBtn.ariaExpanded = 'true'
+        //menuBtn.classList.remove('show-menu')
+    } else {
+        menuBtn.classList.remove('show-menu')
+        burgerBtn.ariaExpanded = 'false'
+    }
+}*/
     
 
 
